@@ -36,7 +36,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/events/ble-active-profile-changed.h>
 
 static struct bt_conn *auth_passkey_entry_conn;
-static uint8_t passkey_entries[6] = {0, 0, 0, 0, 0, 0};
+static uint8_t passkey_entries[6] = {1, 1, 1, 1, 1, 1};
 static uint8_t passkey_digit = 0;
 
 #if IS_ENABLED(CONFIG_ZMK_SPLIT_BLE_ROLE_CENTRAL)
